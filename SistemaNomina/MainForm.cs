@@ -2,9 +2,9 @@ namespace SistemaNomina
 {
     public partial class MainForm : Form
     {
-        private FrmGenericNomina frmGenericNominaMensual;//acceder a metodos
-        private FrmGenericNomina frmGenericNominaQuincenal;
-        private FrmGenericNomina frmGenericNominaSemanal;
+        private FrmNomina frmGenericNominaMensual;//acceder a metodos
+        private FrmNomina frmGenericNominaQuincenal;
+        private FrmNomina frmGenericNominaSemanal;
         private FrmResumen frmResumen;
 
         private bool _isPanelVisibleTipoNomina = false;
@@ -97,10 +97,10 @@ namespace SistemaNomina
         {
             if (frmGenericNominaMensual == null)
             {
-                frmGenericNominaMensual = new FrmGenericNomina("SalarioMensual");
+                frmGenericNominaMensual = new FrmNomina("Mensual");
             }
             tabPrincipal.SelectedTab = tabMensual;// Cambia a la pestaña Mensual
-            frmGenericNominaMensual.AjustarColumnas("SalarioMensual");
+            frmGenericNominaMensual.AjustarColumnas("Mensual");
             MostrarFormularioEnPanel(frmGenericNominaMensual, panelMensual);
 
         }
@@ -110,10 +110,10 @@ namespace SistemaNomina
             
             if (frmGenericNominaQuincenal == null)
             {
-                frmGenericNominaQuincenal = new FrmGenericNomina("SalarioQuincenal");
+                frmGenericNominaQuincenal = new FrmNomina("Quincenal");
             }
             tabPrincipal.SelectedTab = tabQuincenal;
-            frmGenericNominaQuincenal.AjustarColumnas("SalarioQuincenal");
+            frmGenericNominaQuincenal.AjustarColumnas("Quincenal");
             MostrarFormularioEnPanel(frmGenericNominaQuincenal, panelQuincenal);
         }
 
@@ -122,10 +122,10 @@ namespace SistemaNomina
             
             if (frmGenericNominaSemanal == null)
             {
-                frmGenericNominaSemanal = new FrmGenericNomina("SalarioSemanal");
+                frmGenericNominaSemanal = new FrmNomina("Semanal");
             }
             tabPrincipal.SelectedTab = tabSemanal;
-            frmGenericNominaSemanal.AjustarColumnas("SalarioSemanal");
+            frmGenericNominaSemanal.AjustarColumnas("Semanal");
             MostrarFormularioEnPanel(frmGenericNominaSemanal, panelSemanal);
         }
 

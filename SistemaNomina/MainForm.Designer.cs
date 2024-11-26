@@ -54,9 +54,9 @@
             panelQuincenal = new Panel();
             tabSemanal = new TabPage();
             panelSemanal = new Panel();
-            panelPrincipal = new Panel();
             tabResumen = new TabPage();
             panelResumen = new Panel();
+            panelPrincipal = new Panel();
             panelTop.SuspendLayout();
             panelLeft.SuspendLayout();
             panelTipoNomina.SuspendLayout();
@@ -67,8 +67,8 @@
             tabMensual.SuspendLayout();
             tabQuincenal.SuspendLayout();
             tabSemanal.SuspendLayout();
-            panelPrincipal.SuspendLayout();
             tabResumen.SuspendLayout();
+            panelPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // panelTop
@@ -259,7 +259,6 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Anchor = AnchorStyles.None;
             toolStrip1.AutoSize = false;
             toolStrip1.BackColor = Color.Transparent;
             toolStrip1.Dock = DockStyle.None;
@@ -397,15 +396,6 @@
             panelSemanal.Size = new Size(1460, 739);
             panelSemanal.TabIndex = 0;
             // 
-            // panelPrincipal
-            // 
-            panelPrincipal.Controls.Add(tabPrincipal);
-            panelPrincipal.Dock = DockStyle.Fill;
-            panelPrincipal.Location = new Point(250, 47);
-            panelPrincipal.Name = "panelPrincipal";
-            panelPrincipal.Size = new Size(1468, 772);
-            panelPrincipal.TabIndex = 5;
-            // 
             // tabResumen
             // 
             tabResumen.Controls.Add(panelResumen);
@@ -424,6 +414,15 @@
             panelResumen.Name = "panelResumen";
             panelResumen.Size = new Size(1454, 733);
             panelResumen.TabIndex = 0;
+            // 
+            // panelPrincipal
+            // 
+            panelPrincipal.Controls.Add(tabPrincipal);
+            panelPrincipal.Dock = DockStyle.Fill;
+            panelPrincipal.Location = new Point(250, 47);
+            panelPrincipal.Name = "panelPrincipal";
+            panelPrincipal.Size = new Size(1468, 772);
+            panelPrincipal.TabIndex = 5;
             // 
             // MainForm
             // 
@@ -447,8 +446,8 @@
             tabMensual.ResumeLayout(false);
             tabQuincenal.ResumeLayout(false);
             tabSemanal.ResumeLayout(false);
-            panelPrincipal.ResumeLayout(false);
             tabResumen.ResumeLayout(false);
+            panelPrincipal.ResumeLayout(false);
             ResumeLayout(false);
         }
 
